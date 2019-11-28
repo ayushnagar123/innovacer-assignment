@@ -1,0 +1,8 @@
+<h1>Visitors</h1>
+<ul>
+{{#each visitors}}
+    <form action="/visit/delete/:{{name}}" method="get">
+        <li>{{name}} {{email}} {{phone}} {{inTime}}</li><button type="submit">Exit</button>
+    </form>
+{{/each}}
+</ul>
